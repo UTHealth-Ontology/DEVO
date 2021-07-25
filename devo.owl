@@ -11,6 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/DEVO">
         <owl:imports rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo"/>
+        <terms:creator>Rebecca Lin, Xinyuan Zhang, Tuan Amith</terms:creator>
         <terms:title>Dermascopic Elements of Visualization Ontology</terms:title>
     </owl:Ontology>
     
@@ -198,6 +199,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
         <dc:description>Gray-brown lines that are connected at an angle or coalescing to form polygons</dc:description>
+        <skos:altLabel>polygons, zig-zag pattern</skos:altLabel>
     </owl:Class>
     
 
@@ -304,6 +306,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>Pigment associated with adnexal opening that does not uniformly surround the entire opening or curved (or crescent-shaped) pigment lines partially surrounding adnexal openings</dc:description>
+        <skos:prefLabel>Asymmetric pigmented follicular openings</skos:prefLabel>
     </owl:Class>
     
 
@@ -370,6 +374,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Pigment_Network"/>
+        <dc:description>Network with increased variability in the color, thickness, and spacing of the lines of the network; asymmetrically distributed; gray color</dc:description>
     </owl:Class>
     
 
@@ -409,6 +414,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Blotch_Pattern"/>
         <owl:disjointWith rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Blotch_Regular"/>
+        <dc:description>Dark structureless areas,More than one blotch or a blotch that is located off center</dc:description>
     </owl:Class>
     
 
@@ -454,6 +460,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Blotch_Pattern"/>
+        <dc:description>Dark structureless areas,One blotch within center of lesion and surrounded by network</dc:description>
     </owl:Class>
     
 
@@ -491,6 +498,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>Well-circumscribed ovoid structures with confluent or near confluent blue-gray pigmentation</dc:description>
     </owl:Class>
     
 
@@ -538,6 +546,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>An irregular shaped blotch of blue hue with an overlying whitish ground- glass haze</dc:description>
     </owl:Class>
     
 
@@ -601,6 +610,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Streaks_Pattern"/>
+        <dc:description>Broadened or widened network with broken lines and incomplete connections</dc:description>
     </owl:Class>
     
 
@@ -649,6 +659,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Pigment_Network"/>
+        <dc:description>Widening of the network lines</dc:description>
     </owl:Class>
     
 
@@ -742,6 +753,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Brainlike_Pattern"/>
+        <dc:description>Thick curved lines created by gyri and keratin-filled sulci; these gyri and sulci coalesce forming a brainlike appearance pattern</dc:description>
     </owl:Class>
     
 
@@ -905,6 +917,15 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Pigment_Network"/>
+        <dc:description>Light-brown, thin network lines</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/DEVO#Diffused_Spatial_Relationship -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Diffused_Spatial_Relationship">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Spatial_Relationship"/>
     </owl:Class>
     
 
@@ -1014,6 +1035,23 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Dots_Pattern"/>
+        <dc:description>Dots clustered at the center of the lesion, or located on the network lines (also called target network)</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/DEVO#Dotted_Line -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Dotted_Line">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Line"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/DEVO#Double_Line -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Double_Line">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Line"/>
     </owl:Class>
     
 
@@ -1333,6 +1371,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>Volar pigmentation forming thin lines, parallel on the furrow or sulci superficialis (invaginations in dermatoglyphics) and crossing perpendicular on the ridges</dc:description>
     </owl:Class>
     
 
@@ -1570,6 +1609,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Network_Pattern"/>
+        <dc:description>Serpiginous interconnecting broadened hypopigmented lines that surround elongated and curvilinear globules</dc:description>
     </owl:Class>
     
 
@@ -1610,7 +1650,137 @@
     <!-- http://sbmi.uth.edu/ontology/DEVO#Parallel_Furrow_Pattern -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Parallel_Furrow_Pattern">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/DEVO#Double_Line"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
+                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Pigmented_Color"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasSpatialRelationship"/>
+                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Parallel_Spatial_Relationship"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasStroke"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Stroke"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasCategoryWidth"/>
+                                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#ThinWidth"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/DEVO#locatedAtBodyPosition"/>
+                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Volar"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasShape"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/DEVO#Dotted_Line"/>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
+                                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Pigmented_Color"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasSpatialRelationship"/>
+                                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Parallel_Spatial_Relationship"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasStroke"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Stroke"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasCategoryWidth"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#ThinWidth"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>Volar pigmentation forming solid or dotted lines, parallel, thin, on the furrows (sulci superficiales or invaginations in dermatoglyphics); the lines are occasionally doubled, each line is beside the furrows</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/DEVO#Parallel_Ridge_Pattern -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Parallel_Ridge_Pattern">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/DEVO#locatedAtBodyPosition"/>
+                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Volar"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasShape"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Line"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/DEVO#Diffused_Spatial_Relationship"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasSpatialRelationship"/>
+                                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Variable_Spatial_Relationship"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
+                                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Pigmented_Color"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>Volar pigmentation forming lines, parallel, diffuse, and irregular, along the ridges or cristae superficiales (raised portion of the dermatoglyphics)</dc:description>
     </owl:Class>
     
 
@@ -1657,6 +1827,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
         <dc:description>Consists of fine dots with a blue-gray color</dc:description>
+        <skos:altLabel>Regression structures</skos:altLabel>
     </owl:Class>
     
 
@@ -1796,6 +1967,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Streaks_Pattern"/>
+        <dc:description>Bulbous and often kinked projections seen at the lesion edge, either directly associated with a network or solid tumor border</dc:description>
     </owl:Class>
     
 
@@ -1843,6 +2015,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>A structureless pigment area interrupted by nonpigmented adnexal openings</dc:description>
     </owl:Class>
     
 
@@ -1986,6 +2159,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>Gray-brown angulated lines forming a polygonal shape around adnexal ostial openings</dc:description>
     </owl:Class>
     
 
@@ -2176,6 +2350,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Blotch_Pattern"/>
+        <dc:description>White structures in the form of circles, oval structures, or large structureless areas that are bright-white longer and less well-defined lines oriented parallel or distributed haphazardly, or forming blotches (shiny white clods); seen only under polarized dermoscopy</dc:description>
     </owl:Class>
     
 
@@ -2254,6 +2429,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+        <dc:description>This pattern consists of peripheral globules, pseudopods, or streaks (or a combination of them), located around the entire perimeter of the lesion</dc:description>
     </owl:Class>
     
 
@@ -2315,6 +2491,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Pseudonetwork"/>
+        <dc:description>Reddish pseudonetwork (erythema and wavy fine vessels) around hair follicle openings that are accentuated with a white halo appearance</dc:description>
     </owl:Class>
     
 
@@ -2387,6 +2564,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Pigment_Network"/>
+        <dc:description>Network with minimal variability in the color, thickness, and spacing of the lines; symmetrically distributed</dc:description>
     </owl:Class>
     
 
@@ -2517,6 +2695,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Milia-like_Cyst"/>
+        <dc:description>White to yellowish round opalescent structures corresponding to intraepidermal cysts; when they are larger and less bright they are called cloudy</dc:description>
         <rdfs:label>Milia-like Cyst (Cloudy)</rdfs:label>
     </owl:Class>
     
@@ -2560,6 +2739,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Milia-like_Cyst"/>
+        <dc:description>White to yellowish round opalescent structures corresponding to intraepidermal cysts; when they are small and bright they are called starry</dc:description>
         <rdfs:label>Milia-like Cyst (Starry)</rdfs:label>
     </owl:Class>
     
