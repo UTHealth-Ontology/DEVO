@@ -1647,6 +1647,14 @@
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/DEVO#Orthogonal_Spatial_Relationship -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Orthogonal_Spatial_Relationship">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Spatial_Relationship"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/DEVO#Parallel_Furrow_Pattern -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Parallel_Furrow_Pattern">
@@ -2355,6 +2363,52 @@
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/DEVO#Shiny_White_Streaks -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Shiny_White_Streaks">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/DEVO#Streaks_Pattern"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasShape"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Line"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/DEVO#Orthogonal_Spatial_Relationship"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasSpatialRelationship"/>
+                                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Parallel_Spatial_Relationship"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
+                                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#White"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasQualitativeSize"/>
+                                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Small_Size"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Streaks_Pattern"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/DEVO#Short_Size -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Short_Size">
@@ -2366,6 +2420,77 @@
     <!-- http://sbmi.uth.edu/ontology/DEVO#Spatial_Relationship -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Spatial_Relationship"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/DEVO#Spoke_Wheel_Area -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Spoke_Wheel_Area">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasShape"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Line"/>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Blue"/>
+                                                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Gray"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
+                                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#LightBrown"/>
+                                                    </owl:Restriction>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasSpatialRelationship"/>
+                                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Radial_Spatial_Relationship"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasStroke"/>
+                                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Stroke"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#spatial_meets"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Circle"/>
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#Black"/>
+                                                            <rdf:Description rdf:about="http://sbmi.uth.tmc.edu/ontology/evo#DarkBrown"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
+                                                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Blue"/>
+                                                            </owl:Restriction>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/DEVO#hasRelativePosition"/>
+                                                        <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Center"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
+    </owl:Class>
     
 
 
