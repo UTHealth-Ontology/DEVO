@@ -1484,15 +1484,15 @@
                                         <owl:unionOf rdf:parseType="Collection">
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
+                                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/DEVO#Milky_White"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
                                                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pink"/>
                                             </owl:Restriction>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
                                                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Red"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#hasColorFill"/>
-                                                <owl:someValuesFrom rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#White"/>
                                             </owl:Restriction>
                                         </owl:unionOf>
                                     </owl:Class>
@@ -1505,6 +1505,15 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Pattern"/>
         <dc:description>Milky-white appearance or pinkish structureless areas (strawberry and ice creamelike), consisting a red vascular blush with no specific distinguishable vessels</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/DEVO#Milky_White -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/DEVO#Milky_White">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo#Color"/>
+        <skos:prefLabel>Milky White</skos:prefLabel>
     </owl:Class>
     
 
