@@ -10,7 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/DEVO">
-        <owl:imports rdf:resource="http://sbmi.uth.tmc.edu/ontology/evo"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/EVO/main/evo.owl"/>
         <terms:creator>Rebecca Lin, Xinyuan Zhang, Tuan Amith</terms:creator>
         <terms:title>Dermascopic Elements of Visualization Ontology (DEVO)</terms:title>
     </owl:Ontology>
