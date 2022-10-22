@@ -18,8 +18,8 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:edamontology="http://edamontology.org#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/DEVO/main/imports/swo-license.owl">
-        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/DEVO/main/imports/swo-license.owl"/>
+    <owl:Ontology rdf:about="http://www.ebi.ac.uk/swo/swo.owl">
+        <owl:versionIRI rdf:resource="http://www.ebi.ac.uk/swo/swo/releases/2022-10-11/swo.owl"/>
         <terms:creator>Allyson Lister</terms:creator>
         <terms:creator>Andy Brown</terms:creator>
         <terms:creator>Duncan Hull</terms:creator>
