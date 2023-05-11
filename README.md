@@ -1,2 +1,2 @@
 # DEVO
- Dermascopic Elements of Visuals Ontology (DEVO)
+Dermoscopic Elements of Visualizations Ontology (DEVO)
